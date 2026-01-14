@@ -10,7 +10,7 @@
   - [lagrange_transformation](docs/formula/公式验算.md)
   
 - 实验记录
-  - [readme](docs/think/readme.md)
+  - [readme](docs/experiment/readme.md)
   - [function](docs/experiment/function_definition.md)
 
 
