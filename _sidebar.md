@@ -22,17 +22,17 @@
   * [atc_24xiao](docs/1/24xiao)
   * [doe_24Azim](docs/1/24Azim)
   * [nuc_19Baroche](docs/1/19Baroche.md)
-  * [nuc_20Kim](docs/1/20kim)
+  * [nuc_20Kim](docs/1/20Kim)
   * [nuc_24Pankhurst](docs/1/24Pankhurst)
-  * [nuc_23Yang](docs/1/23yang.md)
+  * [nuc_23Yang](docs/1/23Yang.md)
 - 近期论文
   * [uncertain_25Saini](docs/2/25Saini.md)
   * [games_25Liu](docs/2/25Liu.md)
 
 
 - 电车相关
-  * [atc_22zhang](docs/3/22zhang.md)
-  * [doe_24Hoque](docs/3/24Hoque.md)
+  * [atc_22zhang](docs/3/22Zhang.md)
+  * [doe_24Hoque](docs/3/24HoQue.md)
   * [nuc_24Ma](docs/3/24Ma)
 
 - Xie相关论文
