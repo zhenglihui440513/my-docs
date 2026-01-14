@@ -9,6 +9,25 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
+<!-- 侧边栏开关按钮 -->
+<button id="sideToggle" style="position:fixed;left:0;top:8px;z-index:999;
+        background:#364149;color:#fff;border:none;padding:4px 6px;cursor:pointer;">
+  ☰
+</button>
+<style>
+/* 1. 侧边栏收起来时完全消失 */
+.sidebar.collapsed {
+  transform: translateX(-100%);   /* 整体左移出可视区 */
+  transition: .3s;
+}
+
+/* 2. 正文保持原来左边距，永远不会被压 */
+.main,
+.content {
+  padding-left: 0 !important;     /* 先清零 Docsify 原来给的 300px */
+  margin-left:  20px;             /* 只留一点视觉边距即可 */
+}
+</style>
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -24,5 +43,22 @@
 <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<style>
+/* 默认宽度 */
+.sidebar            { width: 300px; transition:.3s; }
+/* 收起状态：只剩一条灰边 */
+.sidebar.collapsed  { width: 20px!important; overflow:hidden; }
+/* 主内容区自动补位 */
+.content            { padding-left: 320px; transition:.3s; }
+.content.collapsed  { padding-left: 40px; }
+</style>
+<script>
+document.getElementById('sideToggle').onclick = function(){
+  // 侧边栏
+  document.querySelector('.sidebar').classList.toggle('collapsed');
+  // 主内容区
+  document.querySelector('.content').classList.toggle('collapsed');
+};
+</script>
 </body>
 </html>
